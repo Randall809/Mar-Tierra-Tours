@@ -1,0 +1,29 @@
+### Obtener todos los tours
+GET http://localhost:3000/api/tours
+
+### Crear un nuevo tour
+POST http://localhost:3000/api/tours
+Content-Type: application/json
+
+{
+  "title": "Tour Example",
+  "description": "A beautiful tour",
+  "price": 100,
+  "type": "Marítimo",
+  "duration": 2
+}
+
+### Obtener un tour por ID
+GET http://localhost:3000/api/tours/{{tourId}}
+
+### Actualizar un tour
+PATCH http://localhost:3000/api/tours/{{tourId}}
+Content-Type: application/json
+
+{
+  "price": 120
+}
+
+### Eliminar un tour
+DELETE http://localhost:3000/api/tours/{{tourId}}
+
